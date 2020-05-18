@@ -3,3 +3,11 @@
 ################################################################################
 
 /Balta/Modelando Dominios Ricos/PaymentContext/PaymentContext.Tests/obj/Debug
+/Balta/Modelando Dominios Ricos/PaymentContext/PaymentContext.Tests/bin/Debug
+/Balta/Modelando Dominios Ricos/PaymentContext/PaymentContext.Shared/obj/Debug
+/Balta/Modelando Dominios Ricos/PaymentContext/PaymentContext.Shared/bin/Debug
+/Balta/Modelando Dominios Ricos/PaymentContext/PaymentContext.Domain/obj/Debug
+/Balta/Modelando Dominios Ricos/PaymentContext/PaymentContext.Domain/bin/Debug
+/Balta/Modelando Dominios Ricos/PaymentContext/packages
+*.suo
+/.vs
