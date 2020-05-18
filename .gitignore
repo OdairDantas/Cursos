@@ -1,0 +1,5 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/Balta/Modelando Dominios Ricos/PaymentContext/PaymentContext.Tests/obj/Debug
