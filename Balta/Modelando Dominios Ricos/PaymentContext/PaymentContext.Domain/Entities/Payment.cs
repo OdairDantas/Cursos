@@ -1,13 +1,10 @@
 ﻿using PaymentContext.Domain.ValueObjects;
+using PaymentContext.Shared.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PaymentContext.Domain.Entities
 {
-    public abstract class Payment
+    public abstract class Payment :Entity
     {
         public Payment( DateTime paidDate, DateTime expireDate, decimal total, decimal totalPaid, string payer, Document document, Address address, Email email)
         {

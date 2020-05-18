@@ -1,4 +1,5 @@
 ﻿using PaymentContext.Domain.ValueObjects;
+using PaymentContext.Shared.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PaymentContext.Domain.Entities
 {
-    public class Student
+    public class Student : Entity
     {
         private IList<Subscription> _subscription;
         public Student(Name name, Document document, Email email)
@@ -16,6 +17,8 @@ namespace PaymentContext.Domain.Entities
             Document = document;
             Email = email;
             _subscription = new List<Subscription>();
+
+            AddNotifications(Name, Document, Email);
         }
 
         public Name Name { get; private set; }
