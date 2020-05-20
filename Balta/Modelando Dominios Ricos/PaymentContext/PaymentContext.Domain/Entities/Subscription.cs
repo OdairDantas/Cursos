@@ -1,4 +1,5 @@
-﻿using PaymentContext.Shared.Entities;
+﻿using Flunt.Validations;
+using PaymentContext.Shared.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,7 @@ namespace PaymentContext.Domain.Entities
 
         public void AddPayment(Payment payment)
         {
+            AddNotifications(new Contract().Requires().IsGreaterThan(DateTime.Now, payment.PaidDate, "Subscription.Payments", "A data do pagamento deve ser futura."));
             _payments.Add(payment);
         }
 

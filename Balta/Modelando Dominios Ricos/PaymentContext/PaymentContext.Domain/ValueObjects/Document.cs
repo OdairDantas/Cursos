@@ -1,4 +1,5 @@
-﻿using PaymentContext.Domain.Enum;
+﻿using Flunt.Validations;
+using PaymentContext.Domain.Enum;
 using PaymentContext.Shared.ValueObjects;
 
 namespace PaymentContext.Domain.ValueObjects
@@ -9,6 +10,7 @@ namespace PaymentContext.Domain.ValueObjects
         {
             Number = number;
             Type = type;
+            AddNotifications(new Contract().Requires().IsTrue(Validate(), "Document.Number", "Documento inválido"));
         }
 
         public string Number { get; set; }

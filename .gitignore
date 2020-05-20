@@ -11,3 +11,5 @@
 /Balta/Modelando Dominios Ricos/PaymentContext/packages
 *.suo
 /.vs
+*.testlog
+*.manifest
